@@ -51,7 +51,7 @@ jobs:
         run: | 
           docker run --rm -d --name test test > /dev/null 2>&1
           sleep 2 && ret=0
-          docker logs test 2>&1 | grep -i "Loading Server" || ret=$?
+          docker logs test 2>&1 | grep -i "Starting server" || ret=$?
           docker rm -f test > /dev/null 2>&1
           exit $ret
       - 
