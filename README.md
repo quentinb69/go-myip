@@ -1,2 +1,2 @@
 # go-myip
-Simple go program to print ip of caller
+Simple go webservice to return the ip of caller
